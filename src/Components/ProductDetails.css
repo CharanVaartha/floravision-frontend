@@ -1,0 +1,16 @@
+.ProductDetails {
+  margin: 50px;
+  border: solid 3px rgb(6, 96, 1);
+  border-radius: 30%;
+  height: auto;       /* allow height to expand with content */
+  min-height: 100vh;  /* ensures full screen when short */
+  padding: 80px;
+}
+.Product {
+  width: 60%;
+  background-color: #1B2217;;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  overflow-y: auto;   /* scrolls independently if content overflows */
+}
