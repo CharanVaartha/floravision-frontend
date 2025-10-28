@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/CharanVaartha/floravision-frontend/static/css/main.58ed0fa1.css",
+    "main.js": "/CharanVaartha/floravision-frontend/static/js/main.e4093a9b.js",
+    "static/js/453.117b0875.chunk.js": "/CharanVaartha/floravision-frontend/static/js/453.117b0875.chunk.js",
+    "static/media/firstplant.png": "/CharanVaartha/floravision-frontend/static/media/firstplant.0bfdb198478c0283d636.png",
+    "static/media/indoor-plant.png": "/CharanVaartha/floravision-frontend/static/media/indoor-plant.4845b009c5641fe30fe2.png",
+    "static/media/mainplant2.png": "/CharanVaartha/floravision-frontend/static/media/mainplant2.25e9889a30a371adaab5.png",
+    "static/media/sixth.png": "/CharanVaartha/floravision-frontend/static/media/sixth.63d1585512602142c27e.png",
+    "static/media/third.png": "/CharanVaartha/floravision-frontend/static/media/third.d93f439fbfbe582c4dd0.png",
+    "static/media/fifth.png": "/CharanVaartha/floravision-frontend/static/media/fifth.1b795cdd75a613d38604.png",
+    "static/media/top4.png": "/CharanVaartha/floravision-frontend/static/media/top4.0c1700626be1459c5c0f.png",
+    "static/media/bg-plant.jpg": "/CharanVaartha/floravision-frontend/static/media/bg-plant.9f8866ab9eb577293f14.jpg",
+    "static/media/plant.png": "/CharanVaartha/floravision-frontend/static/media/plant.9a211970f3a7fb18f34b.png",
+    "static/media/search.png": "/CharanVaartha/floravision-frontend/static/media/search.4d34fa7024881e51706f.png",
+    "index.html": "/CharanVaartha/floravision-frontend/index.html",
+    "main.58ed0fa1.css.map": "/CharanVaartha/floravision-frontend/static/css/main.58ed0fa1.css.map",
+    "main.e4093a9b.js.map": "/CharanVaartha/floravision-frontend/static/js/main.e4093a9b.js.map",
+    "453.117b0875.chunk.js.map": "/CharanVaartha/floravision-frontend/static/js/453.117b0875.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58ed0fa1.css",
+    "static/js/main.e4093a9b.js"
+  ]
+}
