@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/floravision-frontend/static/css/main.778d1a40.css",
-    "main.js": "/floravision-frontend/static/js/main.b8d0d0d9.js",
-    "static/js/453.117b0875.chunk.js": "/floravision-frontend/static/js/453.117b0875.chunk.js",
-    "static/media/firstplant.png": "/floravision-frontend/static/media/firstplant.0bfdb198478c0283d636.png",
-    "static/media/indoor-plant.png": "/floravision-frontend/static/media/indoor-plant.4845b009c5641fe30fe2.png",
-    "static/media/mainplant2.png": "/floravision-frontend/static/media/mainplant2.25e9889a30a371adaab5.png",
-    "static/media/sixth.png": "/floravision-frontend/static/media/sixth.63d1585512602142c27e.png",
-    "static/media/third.png": "/floravision-frontend/static/media/third.d93f439fbfbe582c4dd0.png",
-    "static/media/fifth.png": "/floravision-frontend/static/media/fifth.1b795cdd75a613d38604.png",
-    "static/media/top4.png": "/floravision-frontend/static/media/top4.0c1700626be1459c5c0f.png",
-    "static/media/bg-plant.jpg": "/floravision-frontend/static/media/bg-plant.9f8866ab9eb577293f14.jpg",
-    "static/media/plant.png": "/floravision-frontend/static/media/plant.9a211970f3a7fb18f34b.png",
-    "static/media/search.png": "/floravision-frontend/static/media/search.4d34fa7024881e51706f.png",
-    "index.html": "/floravision-frontend/index.html",
-    "main.778d1a40.css.map": "/floravision-frontend/static/css/main.778d1a40.css.map",
-    "main.b8d0d0d9.js.map": "/floravision-frontend/static/js/main.b8d0d0d9.js.map",
-    "453.117b0875.chunk.js.map": "/floravision-frontend/static/js/453.117b0875.chunk.js.map"
+    "main.css": "./static/css/main.e63fd112.css",
+    "main.js": "./static/js/main.64758627.js",
+    "static/js/453.117b0875.chunk.js": "./static/js/453.117b0875.chunk.js",
+    "static/media/image3.png": "./static/media/image3.e6fc369fa6b8b8524c1c.png",
+    "static/media/firstplant.png": "./static/media/firstplant.0bfdb198478c0283d636.png",
+    "static/media/image1.png": "./static/media/image1.e3a58544f4f3db827319.png",
+    "static/media/indoor-plant.png": "./static/media/indoor-plant.4845b009c5641fe30fe2.png",
+    "static/media/mainplant2.png": "./static/media/mainplant2.25e9889a30a371adaab5.png",
+    "static/media/sixth.png": "./static/media/sixth.63d1585512602142c27e.png",
+    "static/media/third.png": "./static/media/third.d93f439fbfbe582c4dd0.png",
+    "static/media/fifth.png": "./static/media/fifth.1b795cdd75a613d38604.png",
+    "static/media/top4.png": "./static/media/top4.0c1700626be1459c5c0f.png",
+    "static/media/bg-plant.jpg": "./static/media/bg-plant.9f8866ab9eb577293f14.jpg",
+    "static/media/image2.jpg": "./static/media/image2.f615174df669e37b9921.jpg",
+    "static/media/plant.png": "./static/media/plant.9a211970f3a7fb18f34b.png",
+    "static/media/search.png": "./static/media/search.4d34fa7024881e51706f.png",
+    "index.html": "./index.html",
+    "main.e63fd112.css.map": "./static/css/main.e63fd112.css.map",
+    "main.64758627.js.map": "./static/js/main.64758627.js.map",
+    "453.117b0875.chunk.js.map": "./static/js/453.117b0875.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.778d1a40.css",
-    "static/js/main.b8d0d0d9.js"
+    "static/css/main.e63fd112.css",
+    "static/js/main.64758627.js"
   ]
 }
