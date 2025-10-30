@@ -48,9 +48,11 @@ function Upper({ onSelectProduct }) {
         </div>
 
         <div id="image">
+          <div className="imup1">
           <img id="im1" src={firstPlant} alt="Aglaonema" />
-          <p>Indoor Plant</p>
-          <p>Aglaonema Plant</p>
+          <p style={{fontSize:"13px"}}>Indoor Plant</p>
+          <p style={{fontSize:"13px"}}>Aglaonema Plant</p>
+          </div>
           <button
             id="allbtn"
             onClick={() => onSelectProduct(products.aglaonema)}

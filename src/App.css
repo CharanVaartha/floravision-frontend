@@ -19,7 +19,14 @@
   
 }
 
-
+.Product {
+  width: 60%;
+  background-color: #1B2217;;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 8px;
+     
+}
 
 
 .Home {
@@ -28,7 +35,7 @@
   padding: 20px;
   box-sizing: border-box;
   border-radius: 8px;
-  overflow-y: auto;   
+   
 }
 
 .hom1
@@ -45,4 +52,20 @@ body, html {
   padding: 0;
   overflow: auto;     
   font-family: Arial, sans-serif;
+}
+footer{
+  margin-top: 50px;
+}
+/* =======================
+   Responsive Media Queries
+======================= */
+
+@media screen and (max-width: 768px) {
+  .Container {
+    flex-wrap: wrap;  /* allow stacking on mobile */
+  }
+
+  .Home, .Product {
+    width: 100%;      /* full width for each */
+  }
 }

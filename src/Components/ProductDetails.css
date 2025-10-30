@@ -5,14 +5,7 @@
   border-radius: 10%;
   padding: 80px;
 }
-.Product {
-  width: 60%;
-  background-color: #1B2217;;
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 8px;
-  overflow-y: auto;   
-}
+
 .reviews
 {
   

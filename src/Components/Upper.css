@@ -6,7 +6,7 @@ img{
 #u1-side
 {
   
-  width: 4000px;
+  width: 100%;
 }
 
 p{
@@ -53,52 +53,4 @@ height: 200px;
   backdrop-filter: blur(5px);
 }
 
-@media (max-width: 768px) {
-  .footer-content, .u1, .Navigation {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .Lowerimg {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .ProductDetails, .Product, .Home {
-    padding: 20px;
-    margin: 10px;
-  }
-
-  .plant-item {
-    max-width: 120px;
-  }
-
-  #image, #review {
-    max-width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .Lowerimg {
-    grid-template-columns: 1fr;
-  }
-
-  .u1 {
-    font-size: 16px;
-  }
-
-  .Navigation {
-    padding: 8px;
-  }
-
-  .plant-item img {
-    max-width: 100px;
-  }
-
-  .ProductDetails {
-    padding: 15px;
-  }
-
-  p {
-    font-size: 10px;
-  }
-}

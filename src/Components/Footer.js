@@ -14,7 +14,7 @@ function Footer({ onNavigate }) {
             <img src={plant} alt="FloraVision Logo" />
             <h6>FloraVision</h6>
           </div>
-          <p style={{fontSize:"12px"}}>
+          <p style={{}}>
             "From lush indoor greens to vibrant outdoor blooms, our plants are
             crafted to thrive and elevate your living environment."
           </p>

@@ -1,17 +1,32 @@
-import { useRef, useState } from "react";
-import Navbar from './Components/Navbar';
-import ProductDetails from './Components/ProductDetails';
-import './App.css';
-import Upper from './Components/Upper';
-import Lower from './Components/Lower';
-import Footer from './Components/Footer';
+import { useRef, useState, useEffect } from "react";
+import Navbar from "./Components/Navbar";
+import ProductDetails from "./Components/ProductDetails";
+import "./App.css";
+import Upper from "./Components/Upper";
+import Lower from "./Components/Lower";
+import Footer from "./Components/Footer";
 
 function App() {
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const [view, setView] = useState("home"); // Controls which section is shown
+  const [view, setView] = useState("home");
   const footerRef = useRef(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
-  // Handle Navbar Clicks
+  const isMobile = windowWidth <= 768;
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // When a product is selected → switch to Product view (only on mobile)
+  const handleSelectProduct = (product) => {
+    setSelectedProduct(product);
+    if (isMobile) setView("product");
+  };
+
+  // Handle Navbar clicks
   const handleNavigate = (section) => {
     if (section === "contact" && footerRef.current) {
       footerRef.current.scrollIntoView({ behavior: "smooth" });
@@ -21,34 +36,33 @@ function App() {
   };
 
   return (
-    <>
-      <div className="Container">
-        {/* LEFT SIDE (MAIN CONTENT) */}
+    <div className="Container">
+      {/* HOME / INDOOR / OUTDOOR (only visible when not viewing product on mobile) */}
+      {(!isMobile || view !== "product") && (
         <div className="Home">
           <Navbar onNavigate={handleNavigate} />
 
           <div className="hom1">
-            {/* Conditional Section Rendering */}
             {view === "home" && (
               <>
                 <div className="upper">
-                  <Upper onSelectProduct={setSelectedProduct} />
+                  <Upper onSelectProduct={handleSelectProduct} />
                 </div>
                 <div className="lower">
-                  <Lower onSelectProduct={setSelectedProduct} />
+                  <Lower onSelectProduct={handleSelectProduct} />
                 </div>
               </>
             )}
 
             {view === "indoor" && (
               <div className="upper">
-                <Upper onSelectProduct={setSelectedProduct} />
+                <Upper onSelectProduct={handleSelectProduct} />
               </div>
             )}
 
             {view === "outdoor" && (
               <div className="lower">
-                <Lower onSelectProduct={setSelectedProduct} />
+                <Lower onSelectProduct={handleSelectProduct} />
               </div>
             )}
 
@@ -57,18 +71,38 @@ function App() {
             </div>
           </div>
         </div>
+      )}
 
-        {/* RIGHT SIDE (PRODUCT DETAILS) */}
+      {/* PRODUCT DETAILS (only visible when product is selected or always on desktop) */}
+      {(!isMobile || view === "product") && (
         <div className="Product">
           <Navbar onNavigate={handleNavigate} />
           {selectedProduct ? (
-            <ProductDetails product={selectedProduct} />
+            <>
+              {isMobile && (
+                <button
+                  onClick={() => setView("home")}
+                  style={{
+                    background: "#4CAF50",
+                    border: "none",
+                    color: "white",
+                    padding: "8px 12px",
+                    borderRadius: "6px",
+                    marginBottom: "10px",
+                    cursor: "pointer",
+                  }}
+                >
+                  ← Back to Home
+                </button>
+              )}
+              <ProductDetails product={selectedProduct} />
+            </>
           ) : (
             <p style={{ padding: "20px" }}>Select a plant to view details 🌿</p>
           )}
         </div>
-      </div>
-    </>
+      )}
+    </div>
   );
 }
 

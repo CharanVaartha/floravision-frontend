@@ -56,6 +56,7 @@ function Lower({ onSelectProduct }) {
 
   return (
     <>
+    
       <h3>Our Top Selling Plants</h3>
       <div className="Lowerimg">
         {products.map((p) => (
