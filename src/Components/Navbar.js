@@ -16,7 +16,15 @@ function Navbar({ onNavigate }) {
 
       {/* Navigation Buttons */}
       <div>
-        <button id="btn" onClick={() => onNavigate("home")}>Home</button>
+        <button
+  id="btn"
+  onClick={() => {
+    onNavigate("home");
+    window.location.reload();
+  }}
+>
+  Home
+</button>
 
         <div style={{ display: "inline-block", position: "relative" }}>
           <button id="btn" onClick={() => setShowDropdown(!showDropdown)}>

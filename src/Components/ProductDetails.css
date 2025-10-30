@@ -1,9 +1,8 @@
 .ProductDetails {
   margin: 50px;
-  border: solid 3px rgb(6, 96, 1);
-  border-radius: 30%;
-  height: auto;       /* allow height to expand with content */
-  min-height: 100vh;  /* ensures full screen when short */
+  border: solid 3px rgb(0, 0, 0);
+   background-color: rgba(255, 255, 255, 0.09); 
+  border-radius: 10%;
   padding: 80px;
 }
 .Product {
@@ -12,5 +11,28 @@
   padding: 20px;
   box-sizing: border-box;
   border-radius: 8px;
-  overflow-y: auto;   /* scrolls independently if content overflows */
+  overflow-y: auto;   
+}
+.reviews
+{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#im-review
+{
+  margin-top:20px;margin-left:50px;
+
+  width:30px;
+  height: 30px;
+  border-radius: 100%;
+}
+.review-card
+{
+   background-color: rgba(255, 255, 255, 0.09); 
+  border: solid black;
+  border-radius: 30%;
+  height:250px;
+  width:250px;
 }

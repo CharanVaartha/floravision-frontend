@@ -14,7 +14,7 @@ function Footer({ onNavigate }) {
             <img src={plant} alt="FloraVision Logo" />
             <h6>FloraVision</h6>
           </div>
-          <p>
+          <p style={{fontSize:"12px"}}>
             "From lush indoor greens to vibrant outdoor blooms, our plants are
             crafted to thrive and elevate your living environment."
           </p>
@@ -63,7 +63,7 @@ function Footer({ onNavigate }) {
         <div className="footer-section">
           <h5>For every update</h5>
           <form className="email-form">
-            <label htmlFor="email">Enter your email:</label>
+            <label style={{fontSize:"12px"}} htmlFor="email">Enter your email:</label>
             <input
               type="email"
               id="email"
@@ -71,13 +71,13 @@ function Footer({ onNavigate }) {
               placeholder="you@example.com"
               required
             />
-            <input type="submit" value="Subscribe" />
+            < input type="submit" value="Subscribe" />
           </form>
         </div>
       </div>
 
       <p className="footer-copy">
-        © 2025 Earth’s Exhale | Designed with 🌱 by You
+        © 2025 Earth’s Exhale | Designed with 🌱 by Charan
       </p>
     </footer>
   );

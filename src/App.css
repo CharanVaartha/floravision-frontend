@@ -1,8 +1,8 @@
 
 .Container {
   display: flex;
-  gap: 10px;          /* 10px space between Home and Product */
-  min-height: 100vh;  /* fills full screen, expands with content */
+  gap: 10px;          
+  min-height: 100vh;  
   
   
   box-sizing: border-box;
@@ -20,34 +20,30 @@
 }
 
 
-.lower
-{
-  
-}
-/* --- HOME SECTION (30–35%) --- */
+
+
 .Home {
   width: 40%;
   background-color: #1B2217;;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 8px;
-  overflow-y: auto;   /* allows internal scrolling if needed */
+  overflow-y: auto;   
 }
 
-/* --- PRODUCT SECTION (65%) --- */
 .hom1
 {
   display:flex;
   flex-direction:column;
 }
 
-/* --- GLOBAL STYLES --- */
+
 body, html {
   height: 100%;
   color: white;
   margin: 0;
   padding: 0;
-  overflow: auto;     /* ✅ allows full-page scroll */
+  overflow: auto;     
   font-family: Arial, sans-serif;
 }
 footer{
