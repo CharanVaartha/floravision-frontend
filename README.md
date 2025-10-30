@@ -40,4 +40,8 @@ npm start
 Then open your browser and visit:
 
 http://localhost:3000
+## 🌍 Live Demo
+Check out the live version of the project here:  
+👉https://floravision-frontend.vercel.app/
+
 
